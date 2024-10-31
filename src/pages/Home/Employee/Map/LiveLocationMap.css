@@ -1,0 +1,35 @@
+.map-container {
+    height: 400px;
+    width: 100%;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  /* Full screen mode styling */
+  .full-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  /* Button to toggle full-screen mode */
+  .fullscreen-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .fullscreen-button:hover {
+    background-color: #0056b3;
+  }

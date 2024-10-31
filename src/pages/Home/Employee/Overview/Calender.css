@@ -1,0 +1,44 @@
+/* Calendar Container */
+.calendar-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  /* Hide days that are not in the current week */
+  .react-calendar__month-view__days__day--neighboringMonth {
+    display: none;
+  }
+  
+  /* Circular day buttons */
+  .day-tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #1a1a1a; /* Dark color for background */
+    color: white;
+    font-size: 1rem;
+    margin: 5px;
+  }
+  
+  /* Highlight the selected/current date */
+  .react-calendar__tile--active .day-tile {
+    background-color: #00c853; /* Green color for active date */
+    color: white;
+  }
+  
+  /* Disable unnecessary arrows */
+  .react-calendar__navigation button {
+    display: none;
+  }
+  
+  /* Style the selected/current day */
+  .react-calendar__tile:enabled:focus .day-tile,
+  .react-calendar__tile--now .day-tile {
+    background-color: #00c853;
+    color: white;
+  }
+  
